@@ -9,5 +9,19 @@ import { Footer } from './footer/footer';
   styleUrl: './app.css'
 })
 export class App {
+  
   NAME = "VS";
+
+  handleClick(){
+    alert("Clicked!!!");
+  }
+
+  greet(){
+    console.log("Good Morning, VS");
+    this.greetAgain();
+  }
+
+  greetAgain(){
+    console.log("Good Morning, DS")
+  }
 }
