@@ -1,3 +1,36 @@
-<h1>Header Works!</h1>
+<h1>Header Components</h1>
+
+<!-- Demo Form  -->
+<!-- Interpolation -->
+<h1>Interpolation</h1>
 <h2>{{fullName}}</h2>
-<h2>{{number}}</h2>
+<h2>{{age}}</h2>
+<hr>
+
+
+<!-- Property Binding -->
+  <!-- its basically using the properties given or initialised value directly by setting the property of the tagged element.  -->
+  <!-- Below we could have used interpolation method to show the value={{fullName}} but here we are expecting a prop value to showcase dynamically  -->
+<h1>Property Binding</h1>
+<img [src]="demoImg" [alt]="demoName" width="500" height="300" />
+<br>
+<input type="text" [value]="fullName">
+<hr>
+
+
+<!--  Event Binding -->
+<h1>Event Binding</h1>
+<h2>{{age}}</h2>
+<button (click)="increaseAge()">Increase Age</button>
+<button (click)="decreaseAge()">Decrease Age</button>
+<br>
+<hr>
+
+
+<!-- Two Way Data Binding -->
+ <h1>Two Way Data Binding</h1>
+ <label>Name : </label>
+ <span>{{demoName}}</span>
+ <br>
+ <br>
+ <input [(ngModel)]="demoName" placeholder="Enter your name" />
