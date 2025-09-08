@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { Header } from './header/header';
 import { ControlFlow } from './control-flow/control-flow';
 import { SignalEx } from './signal-ex/signal-ex';
+import { AttDirective } from './att-directive/att-directive';
 
 export const routes: Routes = [
     {
@@ -12,5 +13,8 @@ export const routes: Routes = [
     },
     {
         path:'signal', component:SignalEx
+    },
+    {
+        path:'directive', component:AttDirective
     }
 ];
