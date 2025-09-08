@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Header } from "./header/header";
 import { Footer } from './footer/footer';
 import { SignalEx } from './signal-ex/signal-ex';
+import { ControlFlow } from './control-flow/control-flow';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Footer, SignalEx],
+  imports: [Header, Footer, SignalEx, ControlFlow],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
