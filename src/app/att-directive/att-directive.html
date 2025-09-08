@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-3">
+        <div class="p-3" [ngClass]="changeClass()">
+            Div 1
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-success" (click)="changeBG('bg-success')">Green</button>
+        <button class="btn btn-danger" (click)="changeBG('bg-danger')">Red</button>
+    </div>
+</div>
