@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import { Header } from "./header/header";
-import { Footer } from './footer/footer';
-import { SignalEx } from './signal-ex/signal-ex';
-import { ControlFlow } from './control-flow/control-flow';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Footer, SignalEx, ControlFlow],
+  imports: [RouterLink,RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
 

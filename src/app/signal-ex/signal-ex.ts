@@ -3,6 +3,7 @@ import { Component, computed, signal } from '@angular/core';
 @Component({
   selector: 'app-signal-ex',
   imports: [],
+  standalone:true,
   templateUrl: './signal-ex.html',
   styleUrl: './signal-ex.css'
 })

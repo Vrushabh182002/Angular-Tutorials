@@ -4,6 +4,7 @@ import { FormsModule } from "@angular/forms";
 @Component({
   selector: 'app-control-flow',
   imports: [FormsModule],
+  standalone:true,
   templateUrl: './control-flow.html',
   styleUrl: './control-flow.css'
 })
