@@ -3,6 +3,7 @@ import { Header } from './header/header';
 import { ControlFlow } from './control-flow/control-flow';
 import { SignalEx } from './signal-ex/signal-ex';
 import { AttDirective } from './att-directive/att-directive';
+import { Footer } from './footer/footer';
 
 export const routes: Routes = [
     {
@@ -16,5 +17,8 @@ export const routes: Routes = [
     },
     {
         path:'directive', component:AttDirective
+    },
+    {
+        path:'footer', component:Footer
     }
 ];
