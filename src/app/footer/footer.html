@@ -1,1 +1,29 @@
-<h1>Footer Components</h1>
+<div class="m-8 p-10">
+  <h1>Footer Components</h1>
+  <div class="row">
+    <div class="col-3">
+      Name : {{ name }}
+      <br />
+      <!-- // Pipes -->
+      UpperCase : {{ name | uppercase }} 
+    </div>
+    <div class="col-3">
+      Name : {{ name }}
+      <br />
+      <!-- // Pipes -->
+      LowerCase : {{ name | lowercase }} 
+    </div>
+    <div class="col-3">
+      Name : {{ name }}
+      <br />
+      <!-- // Pipes -->
+      TitleCase : {{ name | titlecase }} 
+    </div>
+    <div class="col-3">
+      Numbers : {{ listNum }}
+      <br />
+      <!-- // Pipes -->
+      Slice : {{listNum | slice:0:10}}  
+    </div>
+  </div>
+</div>
